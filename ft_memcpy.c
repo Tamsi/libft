@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   ft_memcpy.c                                        :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: tbesson <marvin@42.fr>                     +#+  +:+       +#+        */
+/*   By: tbesson <tbesson@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/11/23 15:27:05 by tbesson           #+#    #+#             */
-/*   Updated: 2021/11/24 17:35:42 by tbesson          ###   ########.fr       */
+/*   Updated: 2021/12/02 20:33:23 by tbesson          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -18,6 +18,8 @@ void	*ft_memcpy(void *dst, const void *src, size_t n)
 	const char	*s;
 	char		*d;
 
+	if (!dst && !src)
+		return (0);
 	i = 0;
 	d = dst;
 	s = src;

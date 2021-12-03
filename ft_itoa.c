@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   ft_itoa.c                                          :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: tbesson <marvin@42.fr>                     +#+  +:+       +#+        */
+/*   By: tbesson <tbesson@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/09/29 20:44:02 by tbesson           #+#    #+#             */
-/*   Updated: 2021/11/26 16:55:08 by tbesson          ###   ########.fr       */
+/*   Updated: 2021/12/03 12:14:43 by tbesson          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -31,7 +31,9 @@ static int	ft_numsize(long int n)
 {
 	int	size;
 
-	size = 1;
+	size = 0;
+	if (n == 0)
+		return (1);
 	if (n < 0)
 	{
 		n = -n;
